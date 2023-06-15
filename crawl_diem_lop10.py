@@ -38,12 +38,12 @@ provine = [item.find("strong").text for item in l1]
 # quit()
 l = list()
 driver = webdriver.Chrome()
-for year in range(2021,2023,1):
+for year in range(2015,2021,1):
     for href, p in zip(href_list, provine):
 # href = href_list[0]
 # p = provine[0]
 # year=2015
-        url = f"https://diemthi.tuyensinh247.com{href}?year={year}"
+        url = f"https://diemthi.tuyensinh247.com{href}?year={year}"     
 
         print(url)
 
@@ -75,7 +75,7 @@ for year in range(2021,2023,1):
         print(df)
         l.append(df)
             
-pd.concat(l).to_csv('test4.csv',index = False)
+pd.concat(l).to_csv('test5.csv',index = False)
 
 
 # quit()
