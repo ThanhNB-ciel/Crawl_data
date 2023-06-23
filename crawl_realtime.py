@@ -42,7 +42,8 @@ for year in range(2015, 2024):
                             f"""{city}|{tds[0].text}|"THPT {tds[1].text}"|{tds[2].text}|{tds[3].text}|{tds[4].text}|{note}\n""")
             except Exception as e:
                 print(i)
-                
+_list = []              
+                #12
 #đẩy data import pandas as pd
 # from clickhouse_driver import Client
 # import csv
