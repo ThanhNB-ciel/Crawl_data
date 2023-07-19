@@ -49,8 +49,6 @@ from clickhouse_driver import Client
 import csv
 clickhouse_info = {
     "host": "103.119.132.171",
-    "user": "",
-    "password": ""
 }
 client = Client(host=clickhouse_info['host'], port=8123, user=clickhouse_info['user'],
                    password=clickhouse_info['password'], settings={
